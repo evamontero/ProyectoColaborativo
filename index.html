@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head> 
+  <title>Pedir cita</title>
+  <link rel="stylesheet" type="text/css" href="peluqueria.css">
+</head>
+<body>
+<form action="peluqueria.php" method="post">
+   <div class="uno">
+     <fieldset><legend>Cita a nombre de:</legend>
+        <table>
+           <tr><td>Nombre</td><td><input type="text" name="nombre"/></td></tr>
+           <tr><td>Teléfono</td><td><input type="text" name="tlf"/></td></tr>
+        </table>
+     </fieldset>
+    </div>
+    <div class="dos">
+     <fieldset><legend>Escoja día</legend>
+        <table>
+           <tr><td>
+                 <select name="dia">
+                    <option>Escoja el día</option>
+                    <option>Lunes</option>
+                    <option>Martes</option>
+                    <option>Miércoles</option>
+                    <option>Jueves</option>
+                    <option>Viernes</option>
+                    <option>Sábado</option>
+                </select>
+            </td></tr>
+        </table>
+     </fieldset>
+    </div>
+    <div class="tres">
+        <fieldset><legend>Servicios de peluquería</legend>
+           <table>
+               <tr><td>Servicio</td><td>Pelo corto</td><td>Media melena</td><td>Largo</td></tr>
+               <tr><td rowspan="2">Cortar y secar</td><td>12€</td><td>13€</td><td>14€</td></tr>
+               <tr><td><input type="radio" name="cortar" value="corto"/></td>
+                   <td><input type="radio" name="cortar" value="medio"/></td>
+                   <td><input type="radio" name="cortar" value="largo"/></td>
+                </tr>
+                <tr><td rowspan="2">Mechas</td><td>25€</td><td>27€</td><td>30€</td></tr>
+                <tr><td><input type="radio" name="mechas" value="corto"/></td>
+                    <td><input type="radio" name="mechas" value="medio"/></td>
+                    <td><input type="radio" name="mechas" value="largo"/></td>
+                </tr>
+                <tr><td rowspan="2">Tinte</td><td>13€</td><td>16€</td><td>19€</td></tr>
+                <tr><td><input type="radio" name="cortar" value="corto"/></td>
+                   <td><input type="radio" name="cortar" value="medio"/></td>
+                   <td><input type="radio" name="cortar" value="largo"/></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
+    <div class="cuatro">
+        <fieldset><legend>Tramite su cita</legend>
+            <table>
+               <tr>
+                  <td><button type="submit" name="enviar">Enviar</button></td>
+                  <td><button type="reset" name="borrar">Borrar</button></td>
+                </tr>
+            </table>
+        </fieldset>
+    </div>
